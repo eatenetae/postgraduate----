@@ -1,0 +1,67 @@
+mysql:
+  host: 8.141.12.156
+  port: 3306
+  config: "charset=utf8mb4&parseTime=true"
+  db: postgraduate
+  user: postgraduate
+  password: 8.141.12.156
+  log_level: dev
+logger:
+  level: info
+  prefix: '[cabbage]'
+  director: log
+  show_line: true
+  log_in_console: true
+system:
+  host: 0.0.0.0
+  port: 8080
+  env: release
+site_info:
+  name: 考研之路
+  logo: "123"
+  title: 考研之路
+  email: 2495582616@qq.com
+  addr: 内蒙古大学
+  version: 1.0.0
+  wechat_image: ""
+  job: 学生
+  github_url: ""
+  gitee_url: ""
+jwt:
+  secret: xxx
+  expire: 48
+  issuer: hjh
+email:
+  host: "smtp.qq.com"
+  port: 465
+  user: 2495582616@qq.com
+  password: "vykqzhjoigdhdiaf"
+  default_from_email: "2495582616@qq.com"
+  use_ssl: true
+  user_tls: false
+qiniu:
+  enable: false
+  access_key: MaOsHSpW2wYqeTGjEJVVZRWSBS9K9Z3c5j48u5pm
+  secret_key: FyajWUrr7iFMRb8TCzrMiiRtpX3PI0pJ_MfIVXeH
+  bucket: lanbaicai
+  cdn:
+  zone: z1
+  size: 5
+  prefix: lanbaicai
+upload:
+  size: 5
+  path: uploads/file
+redis:
+  ip: 127.0.0.1
+  port: 6379
+  password: ""
+  pool_size: 100
+qq:
+  app_id: dafwea
+  key: xxx
+  redirect: http://xx.xx.com/login?flag=qq
+es:
+  host: "http://8.141.12.156"
+  port: 9200
+  user:
+  password:
